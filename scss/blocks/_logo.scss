@@ -1,0 +1,32 @@
+.logo {
+	margin: 43px 0px;
+
+	@media (max-width: 1439.98px) {
+		margin: 30px 0px;
+	}
+
+	// .logo__container
+	&__container {
+	}
+
+	// .logo__wrapper
+	&__wrapper {
+	}
+
+	// .logo__list
+	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 30px;
+
+		@media (max-width: 767.98px) {
+			flex-direction: column;
+			gap: 20px;
+		}
+	}
+
+	// .logo__item
+	&__item {
+	}
+}

@@ -1,0 +1,133 @@
+section {
+	position: relative;
+	overflow: hidden;
+}
+
+// Text ========================================================================================================================================================
+h1 {
+	font-weight: 600;
+	font-size: 46px;
+	// line-height: 46px;
+	line-height: 100%;
+	text-transform: uppercase;
+
+	@media (max-width: 1439.98px) {
+		font-size: 40px;
+	}
+
+	@media (max-width: 1169.98px) {
+		font-size: 35px;
+	}
+
+	@media (max-width: 991.98px) {
+		font-size: 30px;
+	}
+}
+
+h2 {
+	font-weight: 600;
+	font-size: var(--fz32);
+	// line-height: 45px;
+	line-height: 140%;
+	text-transform: uppercase;
+
+	@media (max-width: 1439.98px) {
+		font-size: 28px;
+	}
+
+	@media (max-width: 1169.98px) {
+		font-size: 24px;
+	}
+
+	@media (max-width: 991.98px) {
+		font-size: var(--fz20);
+	}
+}
+
+h3 {
+}
+
+h4 {
+	font-weight: 600;
+	font-size: var(--fz25);
+	// line-height: 35px;
+	line-height: 140%;
+
+	@media (max-width: 1439.98px) {
+		font-size: var(--fz20);
+	}
+
+	@media (max-width: 1169.98px) {
+		font-size: var(--fz18);
+	}
+
+	@media (max-width: 991.98px) {
+		font-size: var(--fz16);
+	}
+}
+
+h5 {
+}
+
+h6 {
+}
+
+p {
+}
+
+blockquote {
+	padding-left: 23px;
+	border-left: 6px solid currentColor;
+
+	@media (max-width: 1439.98px) {
+		padding-left: 16px;
+		border-width: 2px;
+	}
+}
+
+// Button ========================================================================================================================================================
+.btn {
+	text-transform: none;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	z-index: 10;
+	transition: all 0.3s ease 0s;
+
+	padding: 19px 68px;
+	font-weight: 600;
+	font-size: 24px;
+	// line-height: 26px;
+	line-height: 107%;
+	text-transform: uppercase;
+	border-radius: 10px;
+
+	@media (max-width: 1439.98px) {
+		font-size: var(--fz20);
+		padding: 16px 20px;
+	}
+
+	@media (max-width: 1169.98px) {
+		font-size: var(--fz16);
+	}
+
+	@media (max-width: 991.98px) {
+		font-size: 14px;
+	}
+
+	&._btn-primary {
+		color: var(--primary-color);
+		background: var(--white-color);
+
+		@media (any-hover: hover) {
+			&:hover {
+				color: var(--white-color);
+				background: var(--primary-color);
+			}
+		}
+	}
+}
