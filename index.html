@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=, initial-scale=1.0" />
 	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
 
-	<!-- <link href="lib/bvi.min.css" rel="stylesheet"> -->
+	<link href="lib/bvi.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css" />
 	<script src="https://api-maps.yandex.ru/2.1?apikey=38863ba5-9462-46dc-940c-d9fed985abff&lang=ru_RU"></script>
 
@@ -18,14 +18,13 @@
 
 	<div class="wrapper">
 
-		<link rel="stylesheet" href="css/header.css">
 		<script src="js/header.js" defer></script>
 		<header>
 			<div class="header _header-white">
 				<div class="header__top">
 					<div class="header__container">
 						<div class="header__wrapper">
-							<a class="header__bvi" href="#" id="bvi-btn">
+							<a class="header__bvi bvi-open" href="#">
 								<svg width="31" height="17" viewBox="0 0 31 17" fill="none"
 									xmlns="http://www.w3.org/2000/svg">
 									<path
@@ -296,10 +295,13 @@
 
 	</div>
 
-	<!-- <script src="lib/bvi.min.js"></script>
-	<script>
-		new isvek.Bvi();
-	</script> -->
+	<script type="text/javascript" id="bvi-script-js-extra">
+		var wp_bvi = { "option": { "theme": "white", "font": "arial", "fontSize": 16, "letterSpacing": "normal", "lineHeight": "average", "images": true, "reload": true, "speech": false, "builtElements": true, "panelHide": false, "panelFixed": true, "lang": "ru-RU" } };
+	</script>
+	<script src="lib/bvi.min.js"></script>
+	<script type="text/javascript" id="bvi-script-js-after">
+		var Bvi = new isvek.Bvi(wp_bvi.option);
+	</script>
 	<script src="js/script.js"></script>
 
 </body>
