@@ -7,8 +7,34 @@
 	<meta name="viewport" content="width=, initial-scale=1.0" />
 	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
 
-	<link href="lib/bvi.min.css" rel="stylesheet">
+	<link rel='stylesheet' id='bvi-styles-css' href='https://cdn.jsdelivr.net/npm/bvi@1.0.2/dist/css/bvi.min.css'
+		type='text/css' media='all' />
+	<style id='bvi-styles-inline-css' type='text/css'>
+		.bvi-widget .bvi-svg-eye,
+		.bvi-shortcode .bvi-svg-eye {
+			display: inline-block;
+			overflow: visible;
+			width: 1.125em;
+			height: 1em;
+			font-size: 2em;
+			vertical-align: middle;
+		}
+
+		.bvi-widget,
+		.bvi-shortcode {
+			-webkit-transition: background-color .2s ease-out;
+			transition: background-color .2s ease-out;
+			cursor: pointer;
+			border-radius: 2px;
+			display: inline-block;
+			padding: 5px 10px;
+			vertical-align: middle;
+			text-decoration: none;
+		}
+	</style>
+
 	<link rel="stylesheet" href="css/style.css" />
+
 	<script src="https://api-maps.yandex.ru/2.1?apikey=38863ba5-9462-46dc-940c-d9fed985abff&lang=ru_RU"></script>
 
 	<title>Основные сведения | Библейский институт для регистрации</title>
@@ -280,7 +306,8 @@
 	<script type="text/javascript" id="bvi-script-js-extra">
 		var wp_bvi = { "option": { "theme": "white", "font": "arial", "fontSize": 16, "letterSpacing": "normal", "lineHeight": "average", "images": true, "reload": true, "speech": false, "builtElements": true, "panelHide": false, "panelFixed": true, "lang": "ru-RU" } };
 	</script>
-	<script src="lib/bvi.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bvi@1.0.2/dist/js/bvi.min.js"
+		id="bvi-script-js"></script>
 	<script type="text/javascript" id="bvi-script-js-after">
 		var Bvi = new isvek.Bvi(wp_bvi.option);
 	</script>
